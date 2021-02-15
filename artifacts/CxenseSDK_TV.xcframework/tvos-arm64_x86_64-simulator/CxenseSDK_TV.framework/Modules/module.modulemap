@@ -1,0 +1,11 @@
+framework module CxenseSDK_TV {
+  umbrella header "CxenseSDK_TV.h"
+
+  export *
+  module * { export * }
+}
+
+module CxenseSDK_TV.Swift {
+    header "CxenseSDK_TV-Swift.h"
+    requires objc
+}
