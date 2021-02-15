@@ -6,14 +6,23 @@ let package = Package(
     products: [
         .library(
             name: "CxenseSDK",
-            targets: ["CxenseSDK"]
+            targets: [
+                "CxenseSDK",
+                "CxenseSDKTv"
+            ]
         )
     ],
     dependencies: [],
     targets: [
         .binaryTarget(
             name: "CxenseSDK",
-            path: "artifacts/CxenseSDK.xcframework"
+            path: "https://s3.amazonaws.com/sdk.cxense.com/CxenseSDK-iOS-1.9.1.zip",
+            checksum: "6ea29da04a6f58a78e320575c3520293815c20feac58a669e0c2daf95d49d045"
+        ),
+        .binaryTarget(
+            name: "CxenseSDKTv",
+            path: "https://s3.amazonaws.com/sdk.cxense.com/CxenseSDK-tvOS-1.9.1.zip",
+            checksum: "ec010c56f31900338a5f12c09e8b331eee72a2aaa457aa0fb27f8775d77f2284"
         )
     ]
 )
