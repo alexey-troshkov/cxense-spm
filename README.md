@@ -1,3 +1,3 @@
-# spm
+# Cxense iOS SDK
 
-A description of this package.
+Cxense iOS SDK for SPM (Swift Package Manager)
