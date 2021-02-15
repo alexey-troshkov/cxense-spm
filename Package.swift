@@ -7,13 +7,13 @@ let package = Package(
         .library(
             name: "CxenseSDK",
             targets: ["CxenseSDK"]
-        ),
+        )
     ],
     dependencies: [],
     targets: [
         .binaryTarget(
             name: "CxenseSDK",
-            path: "artifacts/CxenseSDK.xcframework",
-        ),
+            path: "artifacts/CxenseSDK.xcframework"
+        )
     ]
 )
